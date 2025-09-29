@@ -2,14 +2,17 @@
 
 <img width="72" height="72" alt="ic_launcher_soundloader_round" src="https://github.com/user-attachments/assets/1cd86fc9-3afa-415c-8bcf-6d0cd810ab82" />  
 
+
 ## About
 
 An Android app which accepts the URL of a Soundcloud track and downloads it as an MP3 file.
+
 
 ## Screenshots
 
 <img width="405" height="720" alt="Samsung Galaxy S21 Ultra Screenshot 1" src="https://github.com/user-attachments/assets/ae7b687a-7609-4f2a-b28a-54cd3d7710dd" />
 <img width="405" height="720" alt="Samsung Galaxy S21 Ultra Screenshot 2" src="https://github.com/user-attachments/assets/cc057454-9e08-4ad9-b9d1-49dbfd81e113" />
+
 
 ## Features
 
@@ -19,20 +22,25 @@ An Android app which accepts the URL of a Soundcloud track and downloads it as a
 *  Includes thumbnail and metadata
 *  Original quality sound
 
+
 ## How To Install
 
 1.  Clone SoundLoaderAndroid from Github.
 2.  Open solution in Visual Studio.
 3.  Build and run it on your Android device.
 
+
 ## How To Use
 
 1.  Copy URL of a track and paste in SoundLoader.
 2.  OR tap "share" then "SoundLoader" in Soundcloud
 3.  Tap download button
+
 Done!  File will be downloaded to internal storage, in the Documents directory.
 
+
 ## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
+
 
 ## How It Works
 
@@ -53,4 +61,4 @@ Done!  File will be downloaded to internal storage, in the Documents directory.
 
 ## Contributing
 
-We love contributions <3  Don't hesitate to reach out.
+We love contributions <3
