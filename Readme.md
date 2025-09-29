@@ -5,7 +5,7 @@
 
 ## About
 
-A Soundcloud Downloader App for Android.  Built with .NET MAUI on Visual Studio.
+A Soundcloud Downloader App for Android, built with .NET MAUI on Visual Studio.
 
 
 ## Screenshots
