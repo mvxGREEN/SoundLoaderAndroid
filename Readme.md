@@ -1,0 +1,60 @@
+# Android Downloader for Soundcloud
+
+<img width="72" height="72" alt="ic_launcher_soundloader_round" src="https://github.com/user-attachments/assets/1cd86fc9-3afa-415c-8bcf-6d0cd810ab82" />  
+
+## About
+
+An Android app which accepts the URL of a Soundcloud track and downloads it as an MP3 file.
+
+## Screenshots
+
+<img width="405" height="720" alt="Samsung Galaxy S21 Ultra Screenshot 1" src="https://github.com/user-attachments/assets/ae7b687a-7609-4f2a-b28a-54cd3d7710dd" />
+<img width="405" height="720" alt="Samsung Galaxy S21 Ultra Screenshot 2" src="https://github.com/user-attachments/assets/cc057454-9e08-4ad9-b9d1-49dbfd81e113" />
+
+## Features
+
+✦  URL-to-MP3 Downloader
+✦  Share-to-Download [share URL to SoundLoader within Soundcloud app]
+✦  Batch Downloader (playlists & albums)
+✦  Includes thumbnail and metadata
+✦  Original quality sound
+
+## Install
+
+Source Code:
+*  Clone SoundLoaderAndroid from Github.
+*  Open solution in Visual Studio.
+*  Build and run on your physical or emulated Android device.
+
+## Step By Step
+
+* Copy URL of a track and paste in SoundLoader.
+* OR tap "share" then "SoundLoader" in Soundcloud
+* Tap download button
+
+Done!
+
+File will be downloaded to internal storage, in the Documents directory.
+
+## How It Works
+
+* User inputs URL
+* App loads URL HTML
+* Extracts 'player' URL from HTML (https://w.soundcloud.com...)
+* Loads player url in WebView
+* Intercepts "client_id" value from request URL's, OR from 'widget-9' request
+* Parses HTML from webview
+* Extracts metadata (title, artist, thumbnail URL)
+* Extracts 'stream' URL
+* Appends client_id key and value to stream URL
+* Downloads m3u8 file from stream URL
+* Parses M3U8 file for MP3 chunk files' URL's (TS files)
+* Downloads chunk files from their URL's
+* Concatenates chunk files into complete track MP3 file
+
+## Demo
+
+
+## Contributing
+
+We love contributions <3  Don't hesitate to reach out.

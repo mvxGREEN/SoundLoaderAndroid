@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5F1F</color>
+    <color name="colorPrimaryDark">#1f0900</color>
+    <color name="colorAccent">#FF895A</color>
+
+	<color name="colorWhite">#ffffff</color>
+	<color name="colorBlack">#000000</color>
+	<color name="colorGray">#A3A3A3</color>
+	<color name="colorDarkerGray">#333333</color>
+	<color name="colorRed">#FF0000</color>
+	<color name="colorBlue">#0000FF</color>
+	<color name="neonOrange">#FF5F1F</color>
+	<color name="complimentaryDark">#00161f</color>
+	<color name="complimentaryDarker">#00080b</color>
+
+	<color name="transparent">#00000000</color>
+	<color name="shadowInvisible">#00FFFFFF</color>
+	<color name="shadowLighter">#23000000</color>
+	<color name="shadowLight">#43000000</color>
+	<color name="shadow">#69000000</color>
+	<color name="shadowDark">#83000000</color>
+	<color name="shadowDarker">#A9000000</color>
+	<color name="shadowInverseLighter">#28ffffff</color>
+	<color name="shadowInverseLight">#43ffffff</color>
+	<color name="shadowInverse">#93ffffff</color>
+	<color name="shadowInverseDark">#C4ffffff</color>
+	<color name="shadowInverseDarker">#BBffffff</color>
+
+	<color name="spotiflyer">#1f6427</color>
+
+	<color name="mvx">#FF9999</color>
+	<color name="buuDarkererer">#FF4B4B</color>
+	<color name="buuDarkerer">#FF5E5E</color>
+	<color name="buuDarker">#ff7373</color>
+
+	<color name="buuDarkShadow">#D3FF8585</color>
+	<color name="buuShadow">#D3FF9999</color>
+	<color name="buuLightShadow">#D3FFADAD</color>
+	<color name="buuLighter">#FFC0C0</color>
+</resources>

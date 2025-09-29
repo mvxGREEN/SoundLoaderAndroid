@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">SoundLoader</string>
+	<string name="hint_searchbar_url" translatable="false">https://open.spot…</string>
+	<string name="frag_hint_valid_urls" translatable="false">
+		<i>
+			Supported Inputs:
+			\n\u2022 https://open.sound…/song
+		</i>
+	</string>
+	<string name="mp3_sample_url" translatable="false">
+		https://github.com/rafaelreis-hotmart/Audio-Sample-files/raw/master/sample.mp3
+	</string>
+
+	<string name="prefs_file_name" translatable="false">PREFS_SPOTSEEK_ART</string>
+	<string name="prefs_key_stream_url" translatable="false">STREAM_URL</string>
+	<string name="prefs_key_full_stream_url" translatable="false">FULL_STREAM_URL</string>
+	<string name="prefs_key_client_id" translatable="false">CLIENT_ID</string>
+	<string name="prefs_key_playlist_url" translatable="false">PLAYIST_URL</string>
+	<string name="prefs_key_download_url" translatable="false">DOWNLOAD_URL</string>
+	<string name="prefs_key_folder" translatable="false">FOLDER_NAME</string>
+	<string name="prefs_key_filename" translatable="false">FILE_NAME</string>
+	<string name="prefs_key_file_ext" translatable="false">FILE_EXTENSION</string>
+	<string name="prefs_key_show_rate" translatable="false">SHOW_RATE_DIALOG</string>
+	<string name="prefs_key_thumbnail_url" translatable="false">THUMBNAIL_URL</string>
+	<string name="prefs_key_artwork_path" translatable="false">ARTWORK_PATH</string>
+	<string name="prefs_key_original_url" translatable="false">ORIGINAL_URL</string>
+	<string name="prefs_song_title" translatable="false">SONG_TITLE</string>
+	<string name="prefs_song_artist" translatable="false">SONG_ARTIST</string>
+	<string name="prefs_album_title" translatable="false">ALBUM_TITLE</string>
+	<string name="prefs_key_conversions" translatable="false">TOTAL_CONVERSIONS</string>
+	<string name="prefs_key_runs" translatable="false">TOTAL_RUNS</string>
+
+	<string name="key_extra_abs_filepath" translatable="false">ABSOLUTE_FILE_PATH</string>
+	<string name="key_extra_view_id" translatable="false">VIEW_ID</string>
+	<string name="key_extra_menu_item_title" translatable="false">MENU_ITEM_TITLE</string>
+	<string name="key_content_filepath" translatable="false">content_filepath</string>
+	<string name="key_extra_stream_urls" translatable="false">EXTRA_STREAM_URLS</string>
+	<string name="key_extra_chunk_urls" translatable="false">CHUNK_URLS</string>
+
+	<string name="cont_desc_preview" translatable="false">preview of media to be downloaded</string>
+	<string name="cont_desc_logo" translatable="false">app logo</string>
+	<string name="cont_desc_online_icon" translatable="false">button to open pp in browser</string>
+	<string name="cont_desc_download_btn" translatable="false">download button</string>
+	<string name="cont_desc_close" translatable="false">close button</string>
+	<string name="cont_desc_player_control_btn" translatable="false">play button</string>
+	<string name="cont_desc_image_app" translatable="false">app icon</string>
+	<string name="cont_desc_image_file" translatable="false">play button</string>
+	<string name="cont_desc_app_icon" translatable="false">app icon</string>
+	<string name="cont_desc_playpause_btn" translatable="false">play pause button</string>
+
+	<string name="title_menu_pp">Privacy Policy</string>
+	<string name="title_menu_about">About</string>
+	<string name="title_menu_rate">Rate</string>
+	<string name="title_menu_help">Help</string>
+	<string name="title_menu_privacy">Privacy</string>
+	<string name="title_menu_upgrade">Upgrade</string>
+
+	<string name="hint_file_name">file name…</string>
+	<string name="hint_main">Paste URL</string>
+	<string name="hint_track_title">Title…</string>
+	<string name="hint_track_artist">Artist…</string>
+	<string name="hint_album_title">Album…</string>
+	<string name="hint_album_artist">Album Artist…</string>
+	<string name="hint_year">Year…</string>
+	<string name="hint_genre">Genre…</string>
+	<string name="hint_disc_num">Disc #…</string>
+	<string name="hint_track_num">Track #…</string>
+	<string name="hint_composer">Composer…</string>
+	<string name="hint_location">Location…</string>
+
+	<string name="help_step_1">
+		<b>① Copy song URL</b>
+	</string>
+	<string name="help_step_2">
+		<b>② Tap ↑ to paste</b>
+	</string>
+	<string name="help_step_3">
+		<b>③ Tap ↓ to download</b>
+	</string>
+
+	<string name="msg_permissions_error">Please enable storage permission…</string>
+	<string name="msg_contact">Issue? Suggestion? Concern? Lonely?</string>
+	<string name="msg_permissions_denied">Storage permission required</string>
+	<string name="msg_unsupported">Unsupported URL</string>
+	<string name="msg_downloaded_song">File saved to device</string>
+	<string name="msg_no_internet">Not connected to the internet</string>
+	<string name="msg_rate_button1">Rate</string>
+	<string name="msg_rate_button2">Nah</string>
+	<string name="rate_frag_title">Rate Me :)</string>
+	<string name="msg_rate_frag_body">
+		<![CDATA[
+            Enjoying the app?\n\nLet me know!
+        ]]>
+	</string>
+</resources>

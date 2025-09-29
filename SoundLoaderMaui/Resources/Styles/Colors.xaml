@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="Primary">#FF5F1F</Color>
+    <Color x:Key="PrimaryDark">#1f0900</Color>
+    <Color x:Key="PrimaryDarkText">#FFFFFF</Color>
+    <Color x:Key="Secondary">#FFF9F7</Color>
+    <Color x:Key="SecondaryDarkText">#FFFFFF</Color>
+    <Color x:Key="Tertiary">#FF895A</Color>
+
+    <Color x:Key="SoundLoaderOrange">#FF5F1F</Color>
+
+    <Color x:Key="Gold">#D4AF37</Color>
+    <Color x:Key="MvxPink">#FF9999</Color>
+
+    <Color x:Key="PointOh">#00000000</Color>
+    <Color x:Key="PointOhFive">#0D0D0D0D</Color>
+    <Color x:Key="PointOne">#1a1a1a1a</Color>
+    <Color x:Key="PointOneFive">#26262626</Color>
+    <Color x:Key="PointTwo">#33333333</Color>
+    <Color x:Key="PointTwoFive">#40404040</Color>
+    <Color x:Key="PointThree">#4d4d4d4d</Color>
+    <Color x:Key="PointThreeFive">#59595959</Color>
+    <Color x:Key="PointFour">#66666666</Color>
+    <Color x:Key="PointFourFive">#73737373</Color>
+    <Color x:Key="PointFive">#80808080</Color>
+    <Color x:Key="PointFiveFive">#8c8c8c8c</Color>
+    <Color x:Key="PointSix">#99999999</Color>
+    <Color x:Key="PointSixFive">#a6a6a6a6</Color>
+    <Color x:Key="PointSeven">#b3b3b3b3</Color>
+    <Color x:Key="PointSevenFive">#bfbfbfbf</Color>
+    <Color x:Key="PointEight">#cccccccc</Color>
+    <Color x:Key="PointEightFive">#d9d9d9d9</Color>
+    <Color x:Key="PointNine">#e6e6e6e6</Color>
+    <Color x:Key="PointNineFive">#f2f2f2f2</Color>
+
+    <Color x:Key="DarkPointOh">#00000000</Color>
+    <Color x:Key="DarkPointOhFive">#0D000000</Color>
+    <Color x:Key="DarkPointOne">#1a000000</Color>
+    <Color x:Key="DarkPointOneFive">#26000000</Color>
+    <Color x:Key="DarkPointTwo">#33000000</Color>
+    <Color x:Key="DarkPointTwoFive">#40000000</Color>
+    <Color x:Key="DarkPointThree">#4d000000</Color>
+    <Color x:Key="DarkPointThreeFive">#59000000</Color>
+    <Color x:Key="DarkPointFour">#66000000</Color>
+    <Color x:Key="DarkPointFourFive">#73000000</Color>
+    <Color x:Key="DarkPointFive">#80000000</Color>
+    <Color x:Key="DarkPointFiveFive">#8c000000</Color>
+    <Color x:Key="DarkPointSix">#99000000</Color>
+    <Color x:Key="DarkPointSixFive">#a6000000</Color>
+    <Color x:Key="DarkPointSeven">#b3000000</Color>
+    <Color x:Key="DarkPointSevenFive">#bf000000</Color>
+    <Color x:Key="DarkPointEight">#cc000000</Color>
+    <Color x:Key="DarkPointEightFive">#d9000000</Color>
+    <Color x:Key="DarkPointNine">#e6000000</Color>
+    <Color x:Key="DarkPointNineFive">#f2000000</Color>
+
+    <Color x:Key="White">White</Color>
+    <Color x:Key="Black">Black</Color>
+    <Color x:Key="Magenta">#D600AA</Color>
+    <Color x:Key="MidnightBlue">#190649</Color>
+    <Color x:Key="OffBlack">#1f1f1f</Color>
+
+    <Color x:Key="Gray100">#E1E1E1</Color>
+    <Color x:Key="Gray200">#C8C8C8</Color>
+    <Color x:Key="Gray300">#ACACAC</Color>
+    <Color x:Key="Gray400">#919191</Color>
+    <Color x:Key="Gray500">#6E6E6E</Color>
+    <Color x:Key="Gray600">#404040</Color>
+    <Color x:Key="Gray900">#212121</Color>
+    <Color x:Key="Gray950">#141414</Color>
+
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
+    <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
+    <SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Tertiary}"/>
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource White}"/>
+    <SolidColorBrush x:Key="BlackBrush" Color="{StaticResource Black}"/>
+
+    <SolidColorBrush x:Key="Gray100Brush" Color="{StaticResource Gray100}"/>
+    <SolidColorBrush x:Key="Gray200Brush" Color="{StaticResource Gray200}"/>
+    <SolidColorBrush x:Key="Gray300Brush" Color="{StaticResource Gray300}"/>
+    <SolidColorBrush x:Key="Gray400Brush" Color="{StaticResource Gray400}"/>
+    <SolidColorBrush x:Key="Gray500Brush" Color="{StaticResource Gray500}"/>
+    <SolidColorBrush x:Key="Gray600Brush" Color="{StaticResource Gray600}"/>
+    <SolidColorBrush x:Key="Gray900Brush" Color="{StaticResource Gray900}"/>
+    <SolidColorBrush x:Key="Gray950Brush" Color="{StaticResource Gray950}"/>
+    
+</ResourceDictionary>

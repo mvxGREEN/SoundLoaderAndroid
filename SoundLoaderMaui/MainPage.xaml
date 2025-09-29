@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:fa="clr-namespace:UraniumUI.Icons.FontAwesome;assembly=UraniumUI.Icons.FontAwesome"
+             xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
+             xmlns:validation="clr-namespace:InputKit.Shared.Validations;assembly=InputKit.Maui"
+             xmlns:pr="clr-namespace:MPowerKit.ProgressRing;assembly=MPowerKit.ProgressRing"
+             x:Class="SoundLoaderMaui.MainPage">
+
+    <!-- MAIN PAGE CONTENT -->
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="PositionProportional,SizeProportional">
+            <VerticalStackLayout Padding="20,0,20,0" Spacing="20" x:Name="MainVerticalStack">
+                <!-- SEARCH BAR -->
+                <material:TextField x:Name="main_textfield"
+                            Title="Paste URL…"
+                            TitleColor="{AppThemeBinding Light={StaticResource DarkPointEight}, Dark={StaticResource PointEight}}"
+                            AllowClear="True"
+                            ClearButtonVisibility="WhileEditing"
+                            TextChanged="OnTextChanged"
+                            Completed="OnTextCompleted">
+                    <validation:RegexValidation Pattern="^$|((?:https?:\/\/)((?:www\.)|(?:m\.)|(?:on\.))?soundcloud\.com\/)" Message="Please paste a Soundcloud track URL" />
+                    <!-- PASTE BUTTON -->
+                    <material:TextField.Attachments>
+                        <material:ButtonView>
+                            <ImageButton x:Name="paste_button"
+                                Clicked="OnPasteClicked"
+                                HeightRequest="30"
+                                WidthRequest="30">
+                                <ImageButton.Source>
+                                    <FontImageSource FontFamily="FASolid" Color="{AppThemeBinding Dark={StaticResource PointEight}, Light={StaticResource DarkPointEight}}"  Glyph="{x:Static fa:Solid.BoltLightning}"/>
+                                </ImageButton.Source>
+                            </ImageButton>
+                        </material:ButtonView>
+                    </material:TextField.Attachments>
+                </material:TextField>
+
+                <!-- PREVIEW LAYOUT -->
+                <AbsoluteLayout x:Name="preview_layout">
+                    <!-- BORDER -->
+                    <Frame x:Name="preview_frame"
+                        BorderColor="{AppThemeBinding Dark={StaticResource PointEight}, Light={StaticResource DarkPointEight}}"
+                        BackgroundColor="{StaticResource PointOh}"
+                        CornerRadius="10"
+                        ZIndex="1"
+                        AbsoluteLayout.LayoutBounds="0,0,1,360"
+                        AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional">
+                        <!-- THUMBNAIL -->
+                        <Image x:Name="preview_img"
+                            Source="{Binding MThumbnailUrl}"
+                            Aspect="AspectFill"
+                            ZIndex="1"
+                            Margin="-20"
+                            Opacity="0.0"/>
+                    </Frame>
+                    <!-- WEBVIEW -->
+                    <WebView x:Name="preview_webview"
+                        IsVisible="False" />
+                    <!-- PROGRESS -->
+                    <VerticalStackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,1,100"
+                        AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional">
+                        <!-- RING -->
+                        <pr:ProgressRing x:Name="progress_ring"
+                             HeightRequest="100"
+                             Progress="0"
+                             IsIndeterminate="True"
+                             Smooth="True"
+                             WidthRequest="100"
+                             Margin="10"
+                             StrokeLineCap="Square"
+                             Color="{StaticResource SoundLoaderOrange}" 
+                             Thickness="4"
+                             AbsoluteLayout.LayoutBounds="0.5,0.5,100,25"
+                             AbsoluteLayout.LayoutFlags="PositionProportional"
+                             Opacity="0.0"/>
+                        <!-- MESSAGE -->
+                        <Label x:Name="progress_label"
+                            WidthRequest="200"
+                            Text="{Binding MMessageProgress}"
+                            FontSize="Small"
+                            TextColor="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource Black}}"
+                            HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </AbsoluteLayout>
+
+                <!-- DOWNLOADER -->
+                <AbsoluteLayout>
+                    <!-- FRAME -->
+                    <Frame x:Name="downloader_frame"
+                        BorderColor="{AppThemeBinding Dark={StaticResource PointEight}, Light={StaticResource DarkPointEight}}"
+                        BackgroundColor="{StaticResource PointOh}"
+                        CornerRadius="10"
+                        ZIndex="1"
+                        Opacity="0"
+                        AbsoluteLayout.LayoutBounds="0,0,1,95"
+                        AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional">
+                        <StackLayout Orientation="Horizontal"
+                             Spacing="10">
+                            <VerticalStackLayout VerticalOptions="Center">
+                                <!-- TITLE -->
+                                <Label x:Name="preview_title"
+                                    Text="{Binding MTitle}"
+                                    FontSize="Medium"
+                                    TextColor="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource Black}}"
+                                    WidthRequest="250"
+                                    VerticalTextAlignment="Center"
+                                    ZIndex="2" />
+                                <!-- ARTIST -->
+                                <Label x:Name="preview_artist"
+                                    Text="{Binding MArtist}"
+                                    FontSize="Medium"
+                                    TextColor="{AppThemeBinding Dark={StaticResource PointEightFive}, Light={StaticResource DarkPointEightFive}}"
+                                    WidthRequest="250"
+                                    VerticalTextAlignment="Center"
+                                    ZIndex="2" />
+                            </VerticalStackLayout>
+                            <!-- DOWNLOAD BUTTON -->
+                            <material:ButtonView x:Name="dl_btn"
+                                WidthRequest="60"
+                                HeightRequest="60"
+                                Padding="5"
+                                Opacity="0.0">
+                                <ImageButton 
+                                    Clicked="OnDownloadClicked">
+                                    <ImageButton.Source>
+                                        <FontImageSource FontFamily="FASolid"        
+                                            Glyph="{x:Static fa:Solid.CircleDown}" 
+                                            Color="{AppThemeBinding Dark={StaticResource PointEightFive}, Light={StaticResource DarkPointEightFive}}"/>
+                                    </ImageButton.Source>
+                                </ImageButton>
+                            </material:ButtonView>
+                            <!-- RING -->
+                            <pr:ProgressRing x:Name="progress_ring_dlr"
+                                 WidthRequest="50"
+                                 HeightRequest="50"
+                                 Margin="5"
+                                 IsIndeterminate="True"
+                                 Smooth="True"
+                                 StrokeLineCap="Square"
+                                 Color="{AppThemeBinding Dark={StaticResource PointEight}, Light={StaticResource DarkPointEight}}" 
+                                 Thickness="2"
+                                 Opacity="0.0"
+                                 IsVisible="False"/>
+                            <!-- FINISH BUTTON -->
+                            <material:ButtonView x:Name="finish_btn"
+                                WidthRequest="60"
+                                HeightRequest="60"
+                                Padding="5"
+                                Opacity="0.0"
+                                IsVisible="False">
+                                <ImageButton>
+                                    <ImageButton.Source>
+                                        <FontImageSource FontFamily="FASolid"
+                                            Glyph="{x:Static fa:Solid.CircleCheck}" 
+                                            Color="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource Black}}"/>
+                                    </ImageButton.Source>
+                                </ImageButton>
+                            </material:ButtonView>
+                        </StackLayout>
+                    </Frame>
+                </AbsoluteLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
+</ContentPage>
