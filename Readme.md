@@ -13,11 +13,11 @@ An Android app which accepts the URL of a Soundcloud track and downloads it as a
 
 ## Features
 
-✦  URL-to-MP3 Downloader
-✦  Share-to-Download [share URL to SoundLoader within Soundcloud app]
-✦  Batch Downloader (playlists & albums)
-✦  Includes thumbnail and metadata
-✦  Original quality sound
+*  URL-to-MP3 Downloader
+*  Share-to-Download [share URL to SoundLoader within Soundcloud app]
+*  Batch Downloader (playlists & albums)
+*  Includes thumbnail and metadata
+*  Original quality sound
 
 ## Install
 
