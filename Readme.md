@@ -19,40 +19,36 @@ An Android app which accepts the URL of a Soundcloud track and downloads it as a
 *  Includes thumbnail and metadata
 *  Original quality sound
 
-## Install
+## How To Install
 
-Source Code:
-*  Clone SoundLoaderAndroid from Github.
-*  Open solution in Visual Studio.
-*  Build and run on your physical or emulated Android device.
+1.  Clone SoundLoaderAndroid from Github.
+2.  Open solution in Visual Studio.
+3.  Build and run it on your Android device.
 
-## Step By Step
+## How To Use
 
-* Copy URL of a track and paste in SoundLoader.
-* OR tap "share" then "SoundLoader" in Soundcloud
-* Tap download button
+1.  Copy URL of a track and paste in SoundLoader.
+2.  OR tap "share" then "SoundLoader" in Soundcloud
+3.  Tap download button
+Done!  File will be downloaded to internal storage, in the Documents directory.
 
-Done!
-
-File will be downloaded to internal storage, in the Documents directory.
+## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
 
 ## How It Works
 
-* User inputs URL
-* App loads URL HTML
-* Extracts 'player' URL from HTML (https://w.soundcloud.com...)
-* Loads player url in WebView
-* Intercepts "client_id" value from request URL's, OR from 'widget-9' request
-* Parses HTML from webview
-* Extracts metadata (title, artist, thumbnail URL)
-* Extracts 'stream' URL
-* Appends client_id key and value to stream URL
-* Downloads m3u8 file from stream URL
-* Parses M3U8 file for MP3 chunk files' URL's (TS files)
-* Downloads chunk files from their URL's
-* Concatenates chunk files into complete track MP3 file
-
-## Demo
+*  User inputs URL
+*  App loads URL HTML
+*  Extracts 'player' URL from HTML (https://w.soundcloud.com...)
+*  Loads player url in WebView
+*  Intercepts "client_id" value from request URL's, OR from 'widget-9' request
+*  Parses HTML from webview
+*  Extracts metadata (title, artist, thumbnail URL)
+*  Extracts 'stream' URL
+*  Appends client_id key and value to stream URL
+*  Downloads m3u8 file from stream URL
+*  Parses M3U8 file for MP3 chunk files' URL's (TS files)
+*  Downloads chunk files from their URL's
+*  Concatenates chunk files into complete track MP3 file
 
 
 ## Contributing
