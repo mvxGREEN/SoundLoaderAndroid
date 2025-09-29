@@ -38,7 +38,7 @@ SoundLoader is a simple music downloader app, built for Android with the .NET MA
 2.  OR tap "share" then "SoundLoader" in Soundcloud
 3.  Tap download button
 
-Done!  File will be downloaded to internal storage, in the Documents directory.
+Done!  File will be downloaded to your device's Documents directory.
 
 
 ## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
