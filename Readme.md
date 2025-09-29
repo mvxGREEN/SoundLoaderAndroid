@@ -1,11 +1,11 @@
-# Android Downloader for Soundcloud
+# SoundLoader: Soundcloud Downloader
 
 <img width="72" height="72" alt="ic_launcher_soundloader_round" src="https://github.com/user-attachments/assets/1cd86fc9-3afa-415c-8bcf-6d0cd810ab82" />  
 
 
 ## About
 
-A Soundcloud Downloader App for Android, built with .NET MAUI on Visual Studio.
+SoundLoader is a simple music downloader app, built for Android with the .NET MAUI framework.  It accepts a Soundcloud URL (track, album or playlist) and downloads the corresponding track(s) to your device's local storage.
 
 
 ## Screenshots
@@ -17,9 +17,11 @@ A Soundcloud Downloader App for Android, built with .NET MAUI on Visual Studio.
 ## Features
 
 *  URL-to-MP3 Downloader
-*  Share-to-Download [share URL to SoundLoader within Soundcloud app]
-*  Batch Downloader (playlists & albums)
-*  Includes thumbnail and metadata
+*  Batch Downloader (Playlists & Albums)
+*  Share-to-Download
+*  Run in Background
+*  Thumbnail
+*  Metadata
 *  Original quality sound
 
 
