@@ -34,8 +34,8 @@ SoundLoader is a simple music downloader app, built for Android with the .NET MA
 
 ## How To Use
 
-1.  Copy URL of a track and paste in SoundLoader.
-2.  OR tap "share" then "SoundLoader" in Soundcloud
+1.  Copy & paste desired URL into SoundLoader
+2.  OR, tap "Share" then "SoundLoader"
 3.  Tap download button
 
 Done!  File will be downloaded to your device's Documents directory.
