@@ -16,7 +16,7 @@ SoundLoader is a simple music downloader app, built for Android with the .NET MA
 *  Run in Background
 *  Thumbnail
 *  Metadata
-*  Original quality sound
+*  Original quality
 
 
 ## Screenshots
@@ -29,16 +29,16 @@ SoundLoader is a simple music downloader app, built for Android with the .NET MA
 
 1.  Clone SoundLoaderAndroid from Github.
 2.  Open solution in Visual Studio.
-3.  Build and run it on your Android device.
+3.  Build and run on your Android device.
 
 
 ## How To Use
 
-1.  Copy & paste desired URL into SoundLoader
-2.  OR, tap "Share" then "SoundLoader"
-3.  Tap download button
+1.  Copy & paste desired URL into SoundLoader,
+2.  OR tap "Share" then "SoundLoader."
+3.  Tap download button.
 
-Done!  File will be downloaded to your device's Documents directory.
+Done!  File will be saved to your device's Documents directory.
 
 
 ## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
@@ -46,19 +46,19 @@ Done!  File will be downloaded to your device's Documents directory.
 
 ## How It Works
 
-*  User inputs URL
-*  App loads URL HTML
-*  Extracts 'player' URL from HTML (https://w.soundcloud.com...)
-*  Loads player url in WebView
-*  Intercepts "client_id" value from request URL's, OR from 'widget-9' request
-*  Parses HTML from webview
-*  Extracts metadata (title, artist, thumbnail URL)
-*  Extracts 'stream' URL
-*  Appends client_id key and value to stream URL
-*  Downloads m3u8 file from stream URL
-*  Parses M3U8 file for MP3 chunk files' URL's (TS files)
-*  Downloads chunk files from their URL's
-*  Concatenates chunk files into complete track MP3 file
+*  User inputs URL...
+*  Load page HTML at given URL
+*  Extract player URL from HTML (https://w.soundcloud.com...)
+*  Load player URL in WebView
+*  Load and parses HTML from webview
+*  Extract track metadata (title, artist, thumbnail URL, etc.)
+*  Extract stream URL
+*  Parse request URL's for client_id
+*  Append client_id parameter to stream URL
+*  Download .M3U8 file from stream URL
+*  Parse .M3U8 file for .TS file URL's
+*  Download .TS files from each URL
+*  Concatenate .TS files into a complete MP3 file
 
 
 ## Contributing
