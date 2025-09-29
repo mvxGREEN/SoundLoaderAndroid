@@ -5,7 +5,7 @@
 
 ## About
 
-An Android app which accepts the URL of a Soundcloud track and downloads it as an MP3 file.
+A Soundcloud Downloader App for Android.  Built with .NET MAUI on Visual Studio.
 
 
 ## Screenshots
