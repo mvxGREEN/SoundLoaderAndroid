@@ -1,7 +1,6 @@
-<img width="72" height="72" alt="ic_launcher_soundloader_round" src="https://github.com/user-attachments/assets/1cd86fc9-3afa-415c-8bcf-6d0cd810ab82" />  
 # SoundLoader: Soundcloud Downloader
 
-<img width="1024" height="500" alt="play_store_feature_graphic" src="https://github.com/user-attachments/assets/6aa0246a-9953-493b-88e6-25e871157643" />
+<img width="72" height="72" alt="ic_launcher_soundloader_round" src="https://github.com/user-attachments/assets/1cd86fc9-3afa-415c-8bcf-6d0cd810ab82" />  
 
 ## About
 
