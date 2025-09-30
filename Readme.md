@@ -26,9 +26,10 @@ SoundLoader is a simple music downloader app, built for Android with the .NET MA
 
 ## How To Install
 
-1.  Clone SoundLoaderAndroid from Github.
-2.  Open solution in Visual Studio.
-3.  Build and run on your Android device.
+1.  Clone [SoundLoaderAndroid](https://github.com/mvxGREEN/SoundLoaderAndroid) repo from Github.
+2.  Open solution file in Visual Studio.
+3.  Build app
+4.  Run on your physical or emulated Android device.
 
 
 ## How To Use
