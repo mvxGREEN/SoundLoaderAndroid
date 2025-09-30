@@ -53,19 +53,21 @@ Done!  File will be saved to your device's Documents directory.
 ## How It Works
 
 *\*user inputs url\**
-1.  Get html of webpage at given url
-2.  Parse html for player url
-3.  Load player url in webview
-4.  Intercept webview requests
-5.  Parse request urls for 'client_id' parameter; save its value for later
-6.  Get html from loaded page in webview
-7.  Parse html for stream url and track metadata (title, artist, thumbnail URL)
-8.  Append your 'client_id' parameter to the stream url
-9.  Download M3U8 file from your new stream url
-10.  Parse M3U8 file for TS urls
-11.  Download TS files
-12.  Concatenate TS files into single MP3 file
-13.  Delete temporary files (M3U8 and TS files)
+1.  Load html of webpage at url
+2.  Parse html for player_url
+3.  Load player_url in webview
+4.  Intercept webview requests while loading
+5.  Parse intercepted request urls for client_id parameter
+6.  Parse html of loaded page for stream_url, thumbnail_url and track metadata (title, artist, etc.)
+7.  Append client_id to stream_url, creating full_stream_url
+8.  Request json from full_stream_url
+9.  Parse json for playlist_url
+10.  Download m3u file from playlist_url
+11.  Parse M3U8 file for TS urls
+12.  Download TS files
+13.  Download thumbnail
+14.  Concatenate TS files into final MP3 file
+15.  Add thumbnail and metadata to file
 
 
 ## Contributing
