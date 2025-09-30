@@ -53,7 +53,7 @@ Done!  File will be saved to your device's Documents directory.
 ## How It Works
 
 *\*user inputs url\**
-1.  Load html of webpage at url
+1.  Load html of webpage at input_url
 2.  Parse html for player_url
 3.  Load player_url in webview
 4.  Intercept webview requests while loading
