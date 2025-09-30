@@ -52,19 +52,19 @@ Done!  File will be saved to your device's Documents directory.
 
 ## How It Works
 
-*  User inputs URL...
-*  Load page HTML at given URL
-*  Extract player URL from HTML (https://w.soundcloud.com...)
-*  Load player URL in WebView
-*  Load and parses HTML from webview
-*  Extract track metadata (title, artist, thumbnail URL, etc.)
-*  Extract stream URL
-*  Parse request URL's for client_id
-*  Append client_id parameter to stream URL
-*  Download .M3U8 file from stream URL
-*  Parse .M3U8 file for .TS file URL's
-*  Download .TS files from each URL
-*  Concatenate .TS files into a complete MP3 file
+*user inputs URL*
+1.  Load page HTML at given URL
+2.  Extract player URL from HTML (https://w.soundcloud.com...)
+3.  Load player URL in WebView
+4.  Load and parses HTML from webview
+5.  Extract track metadata (title, artist, thumbnail URL, etc.)
+6.  Extract stream URL
+7.  Parse request URL's for client_id
+8.  Append client_id parameter to stream URL
+9.  Download .M3U8 file from stream URL
+10.  Parse .M3U8 file for .TS file URL's
+11.  Download .TS files from each URL
+12.  Concatenate .TS files into a single MP3 file
 
 
 ## Contributing
