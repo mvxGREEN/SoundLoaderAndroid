@@ -47,9 +47,6 @@ OR,
 Done!  File will be saved to your device's Documents directory.
 
 
-## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
-
-
 ## How It Works
 
 *\*User inputs URL\**
@@ -65,6 +62,9 @@ Done!  File will be saved to your device's Documents directory.
 10.  Parse .M3U8 file for .TS file URL's
 11.  Download .TS files from each URL
 12.  Concatenate .TS files into a single MP3 file
+
+
+## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
 
 
 ## Contributing
