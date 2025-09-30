@@ -40,8 +40,9 @@ SoundLoader is a simple music downloader app, built for Android with the .NET MA
 
 OR,
 
-1.  Open desired track and tap "Share"
-2.  Tap "SoundLoader"
+1.  Open desired track
+2.  Tap "Share"
+3.  Tap "SoundLoader"
 
 Done!  File will be saved to your device's Documents directory.
 
