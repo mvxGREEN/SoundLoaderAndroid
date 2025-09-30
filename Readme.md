@@ -47,6 +47,9 @@ OR,
 Done!  File will be saved to your device's Documents directory.
 
 
+## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
+
+
 ## How It Works
 
 *\*User inputs URL\**
@@ -62,9 +65,6 @@ Done!  File will be saved to your device's Documents directory.
 10.  Download .TS files
 11.  Concatenate .TS files into a single MP3 file
 12.  Delete temporary files (M3U8 and TS files)
-
-
-## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
 
 
 ## Contributing
