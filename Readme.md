@@ -51,17 +51,18 @@ Done!  File will be saved to your device's Documents directory.
 
 *\*User inputs URL\**
 1.  Load page HTML at given URL
-2.  Extract player URL from HTML (https://w.soundcloud.com...)
+2.  Extract player URL from HTML
 3.  Load player URL in WebView
-4.  Load and parses HTML from webview
-5.  Extract track metadata (title, artist, thumbnail URL, etc.)
-6.  Extract stream URL
-7.  Parse request URL's for client_id
-8.  Append client_id parameter to stream URL
-9.  Download .M3U8 file from stream URL
-10.  Parse .M3U8 file for .TS file URL's
-11.  Download .TS files from each URL
-12.  Concatenate .TS files into a single MP3 file
+4.  Extract HTML from loaded page in webview
+5.  Parse HTML for stream URL and track metadata (title, artist, thumbnail URL)
+6.  Intercept and parse request URLs for 'client_id' parameter
+7.  Append 'client_id' parameter to stream URL
+8.  Download .M3U8 file from new stream URL 
+9.  Parse .M3U8 file for .TS URLs
+10.  Download .TS files
+11.  Concatenate .TS files into a single MP3 file
+12.  Delete temporary files (M3U8 and TS files)
+*Finished*
 
 
 ## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
