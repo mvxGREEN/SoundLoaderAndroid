@@ -16,7 +16,7 @@ SoundLoader is a simple music downloader app, built for Android with the .NET MA
 *  Run in Background
 *  Thumbnail
 *  Metadata
-*  Original quality
+*  Original Quality
 
 
 ## Screenshots
