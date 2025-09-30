@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="93" android:versionName="8.1.4" package="com.mvxgreen.downloader4soundcloud">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="93" android:versionName="8.1.4" package="green.mobileapps.soundloader">
 	<application android:allowBackup="true" android:icon="@mipmap/appicon_launcher" android:supportsRtl="true" android:label="SoundLoader" android:requestLegacyExternalStorage="true">
 
 	</application>
