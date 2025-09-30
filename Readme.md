@@ -52,7 +52,7 @@ Done!  File will be saved to your device's Documents directory.
 
 ## How It Works
 
-**user inputs URL**
+*\*user inputs URL\**
 1.  Load page HTML at given URL
 2.  Extract player URL from HTML (https://w.soundcloud.com...)
 3.  Load player URL in WebView
