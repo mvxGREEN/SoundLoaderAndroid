@@ -13,10 +13,10 @@ SoundLoader is a simple music downloader app, built for Android with the .NET MA
 *  Batch Downloader (Playlists & Albums)
 *  Share-to-Download
 *  Run in Background
+*  Paste Button
 *  Thumbnail
 *  Metadata
 *  Original Quality
-*  Quick Paste Button
 
 ## Screenshots
 
