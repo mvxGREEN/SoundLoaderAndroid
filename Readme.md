@@ -53,12 +53,12 @@ Done!  File will be saved to your device's Documents directory.
 ## How It Works
 
 *\*user inputs url\**
-1.  Get html of webpage at given url as a string
+1.  Get html of webpage at given url
 2.  Parse html for player url
 3.  Load player url in webview
-4.  While loading, intercept webview requests
+4.  Intercept webview requests
 5.  Parse request urls for 'client_id' parameter; save its value for later
-6.  When finished loading, get html from webview as string
+6.  Get html from loaded page in webview
 7.  Parse html for stream url and track metadata (title, artist, thumbnail URL)
 8.  Append your 'client_id' parameter to the stream url
 9.  Download M3U8 file from your new stream url
