@@ -56,7 +56,7 @@ Done!  File will be saved to your device's Documents directory.
 1.  Load html of webpage at input_url
 2.  Parse html for player_url
 3.  Load player_url in webview
-4.  Intercept webview requests while loading
+4.  Intercept webview requests
 5.  Parse intercepted request urls for client_id parameter
 6.  Parse html of loaded page for stream_url, thumbnail_url and track metadata (title, artist, etc.)
 7.  Append client_id to stream_url, creating full_stream_url
