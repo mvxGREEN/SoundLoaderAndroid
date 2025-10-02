@@ -111,6 +111,7 @@ static class Soundloader
         Console.WriteLine($"{Tag}: AbsPathDocsTemp={AbsPathDocsTemp}");
     }
 
+    // TODO something, anything about this mess
     public static void ResetVars()
     {
         Console.WriteLine($"{Tag} ResetVars");
@@ -134,14 +135,12 @@ static class Soundloader
         MThumbnailFilename = "";
         mp.MMessageProgress = "";
         mp.MMessageToast = "";
-        
         MFailedShowInter = false;
     }
 
-    // TODO use between tracks if necessary
     public static void ResetVarsForNext()
     {
-        // only reset vars necessary to download next m3u
+        // reset vars, just not everything
         MCountChunksFinal = 0;
         MCountChunks = 0;
         MMp3Urls = [];
@@ -149,6 +148,7 @@ static class Soundloader
     }
 
 #if ANDROID
+    // recursively delete everything in given directory
     public static bool DeleteTempFiles(Java.IO.File temp)
     {
         Console.WriteLine($"{Tag} DeleteTempFiles temp.AbsolutePath={temp.AbsolutePath}");
@@ -166,7 +166,7 @@ static class Soundloader
 
     // LOAD
 #if ANDROID
-    public static async Task LoadJson(string u)
+    public static async Task  LoadJson(string u)
     {
         Console.WriteLine($"{Tag} LoadJson url={u}");
         HttpURLConnection connection;
@@ -174,12 +174,12 @@ static class Soundloader
         string m3uUrl;
         try
         {
-            // Connect to url
+            // establish connection
             URL url = new URL(u);
             connection = (HttpURLConnection)url.OpenConnection();
             connection.Connect();
 
-            // Read response
+            // get json response as string
             Stream stream = connection.InputStream;
             reader = new BufferedReader(new InputStreamReader(stream));
             StringBuilder builder = new StringBuilder();
@@ -191,34 +191,34 @@ static class Soundloader
             }
             string json = builder.ToString();
 
+            // clean up behind you
             stream.Close();
             reader.Close();
             connection.Disconnect();
 
             if (u.Contains("com/playlists"))
             {
-                // extract playlist id
+                // get playlist id
                 string playlistId = u.Substring(u.IndexOf("/playlists/") + 11, 7);
                 Console.WriteLine($"{Tag} playlistId={playlistId}");
 
-                // extract track ids
+                // get track id(s)
                 string ids = "";
                 
                 while (json.Contains("\"kind\":\"track"))
                 {
                     Console.WriteLine($"{Tag} found track");
                     if (ids != "")
-                        ids = ids + "%2C";
+                        ids += "%2C";
 
                     string id = json.Substring(json.IndexOf("\"kind\":\"track") - 11);
                     if (id.StartsWith(":"))
                     {
-                        // album format
                         id = id.Substring(1);
                     }
                     id = id.Substring(0, id.IndexOf(","));
 
-                    ids = ids + id;
+                    ids += id;
 
                     json = json.Substring(json.IndexOf("\"kind\":\"track") + 1);
                 }
