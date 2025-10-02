@@ -1,60 +1,72 @@
-# Android Downloader for Soundcloud
+# SoundLoader: Soundcloud Downloader
 
 <img width="72" height="72" alt="ic_launcher_soundloader_round" src="https://github.com/user-attachments/assets/1cd86fc9-3afa-415c-8bcf-6d0cd810ab82" />  
 
 ## About
 
-An Android app which accepts the URL of a Soundcloud track and downloads it as an MP3 file.
+SoundLoader is a simple music downloader app, built for Android with the .NET MAUI framework.  It accepts a Soundcloud URL (track, album or playlist) and downloads the corresponding track(s) to your device's local storage.
+
+
+## Features
+
+*  URL-to-MP3 Downloader
+*  Batch Downloader (Playlists and Albums)
+*  Share-to-Download
+*  Run in Background
+*  Paste Button
+*  Thumbnail
+*  Metadata (ID3 Tags)
+*  Original Quality
 
 ## Screenshots
 
 <img width="405" height="720" alt="Samsung Galaxy S21 Ultra Screenshot 1" src="https://github.com/user-attachments/assets/ae7b687a-7609-4f2a-b28a-54cd3d7710dd" />
 <img width="405" height="720" alt="Samsung Galaxy S21 Ultra Screenshot 2" src="https://github.com/user-attachments/assets/cc057454-9e08-4ad9-b9d1-49dbfd81e113" />
 
-## Features
 
-✦  URL-to-MP3 Downloader
-✦  Share-to-Download [share URL to SoundLoader within Soundcloud app]
-✦  Batch Downloader (playlists & albums)
-✦  Includes thumbnail and metadata
-✦  Original quality sound
+## How To Install
 
-## Install
+1.  Clone [SoundLoaderAndroid](https://github.com/mvxGREEN/SoundLoaderAndroid) repo from Github.
+2.  Open solution file in Visual Studio.
+3.  Build project.
+4.  Run it on your Android physical or emulated device.
 
-Source Code:
-*  Clone SoundLoaderAndroid from Github.
-*  Open solution in Visual Studio.
-*  Build and run on your physical or emulated Android device.
 
-## Step By Step
+## How To Use
 
-* Copy URL of a track and paste in SoundLoader.
-* OR tap "share" then "SoundLoader" in Soundcloud
-* Tap download button
+1.  Copy desired URL
+2.  Paste into SoundLoader
+3.  Tap download button
 
-Done!
+OR,
 
-File will be downloaded to internal storage, in the Documents directory.
+1.  Open desired track
+2.  Tap "Share"
+3.  Tap "SoundLoader"
+
+Done!  File will be saved to your device's Documents directory.
+
+
+## [Demo](https://youtu.be/Evi0wVs-WLI?si=z8fdNlIfUhn9m3Xa)
+
 
 ## How It Works
 
-* User inputs URL
-* App loads URL HTML
-* Extracts 'player' URL from HTML (https://w.soundcloud.com...)
-* Loads player url in WebView
-* Intercepts "client_id" value from request URL's, OR from 'widget-9' request
-* Parses HTML from webview
-* Extracts metadata (title, artist, thumbnail URL)
-* Extracts 'stream' URL
-* Appends client_id key and value to stream URL
-* Downloads m3u8 file from stream URL
-* Parses M3U8 file for MP3 chunk files' URL's (TS files)
-* Downloads chunk files from their URL's
-* Concatenates chunk files into complete track MP3 file
-
-## Demo
+*\*user inputs url\**
+1.  Load html of webpage at *input_url*
+2.  Parse html for *player_url*
+3.  Load *player_url* in webview
+4.  Intercept and parse webview request urls for *client_id*
+5.  Parse page html for *stream_url*, *thumbnail_url* and track metadata (*title*, *artist*, etc.)
+6.  Append *client_id* to *stream_url* to create *full_stream_url*
+7.  Request json from *full_stream_url*
+8.  Parse json for *playlist_url*
+9.  Download playlist file (.m3u8) from *playlist_url*
+10.  Parse playlist file for *chunk_urls*
+11.  Download chunk files (.ts) from *chunk_urls*
+13.  Concatenate chunk files into one complete MP3 file
 
 
 ## Contributing
 
-We love contributions <3  Don't hesitate to reach out.
+We love contributions <3
